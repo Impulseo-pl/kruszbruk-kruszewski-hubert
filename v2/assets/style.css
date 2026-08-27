@@ -82,8 +82,8 @@ header.nav.on{box-shadow:0 8px 30px rgba(0,0,0,.08)}
 .btn-k:hover{background:var(--yel);color:var(--ink);border-color:var(--yel)}
 .btn-o{border-color:var(--ink);color:var(--ink)}
 .btn-o:hover{background:var(--ink);color:#fff}
-.dark .btn-o{border-color:#fff;color:#fff}
-.dark .btn-o:hover{background:#fff;color:var(--ink)}
+.dark .btn-o,.hero .btn-o,.phero .btn-o{border-color:#fff;color:#fff}
+.dark .btn-o:hover,.hero .btn-o:hover,.phero .btn-o:hover{background:#fff;color:var(--ink)}
 .burger{display:none;background:none;border:2px solid var(--ink);width:46px;height:46px;font-size:20px;cursor:pointer}
 
 /* ---------- HERO ---------- */
