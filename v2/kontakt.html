@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kontakt — Kruszbruk, brukarstwo Korytnica | 515 643 620</title>
+<meta name="description" content="Kontakt do firmy Kruszbruk: 515 643 620, biuro@kruszbruk.pl, Jaczew 7, 07-120 Korytnica. Bezpłatna wycena z pomiarem na miejscu.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Kruszbruk">
+<meta property="og:title" content="Kontakt — Kruszbruk, brukarstwo Korytnica | 515 643 620">
+<meta property="og:description" content="Kontakt do firmy Kruszbruk: 515 643 620, biuro@kruszbruk.pl, Jaczew 7, 07-120 Korytnica. Bezpłatna wycena z pomiarem na miejscu.">
+<meta property="og:image" content="img/og.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Kruszbruk Kruszewski Hubert","telephone":"+48515643620","email":"biuro@kruszbruk.pl","address":{"@type":"PostalAddress","streetAddress":"Jaczew 7","postalCode":"07-120","addressLocality":"Korytnica","addressCountry":"PL"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"3"},"areaServed":"Korytnica, Węgrów, Wyszków, Warszawa"}</script>
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script>
+/* Zasłona wejścia. W <head> bez defer, żeby strona nie mignęła przed zasłoną.
+   Gra raz na wizytę (sessionStorage); ?intro w adresie = zagraj ponownie. */
+(function(){
+  try{
+    var h=document.documentElement; h.classList.add('js-on');
+    if(window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches) return;
+    var znowu = location.search.indexOf('intro') > -1;
+    if(!znowu && sessionStorage.getItem('kruszbruk-intro')) return;
+    sessionStorage.setItem('kruszbruk-intro','1');
+    h.classList.add('intro-on');
+    var zdjete=false;
+    function koniec(){
+      if(zdjete) return; zdjete=true;
+      h.classList.add('intro-out');
+      setTimeout(function(){ h.classList.remove('intro-on','intro-out'); },900);
+    }
+    setTimeout(koniec,1900);
+    setTimeout(function(){ h.classList.remove('intro-on','intro-out'); },4200);
+    document.addEventListener('click',koniec);
+    addEventListener('wheel',koniec,{passive:true});
+    addEventListener('touchstart',koniec,{passive:true});
+    addEventListener('keydown',koniec);
+  }catch(e){}
+})();
+</script>
+</head>
+<body>
+<div id="intro" aria-hidden="true">
+  <div class="im">Krusz<span>bruk</span></div>
+  <div class="sub">Brukarstwo &middot; Korytnica</div>
+  <div class="bar"></div>
+</div>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="index.html" class="brand"><i>K</i>Krusz<em>bruk</em></a>
+    <ul class="menu" id="menu">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="podjazdy-i-dojazdy.html">Oferta</a>
+        <div class="drop"><a href="podjazdy-i-dojazdy.html">Podjazdy i dojazdy</a><a href="tarasy-i-sciezki.html">Tarasy i ścieżki</a><a href="place-parkingi-drogi.html">Place, parkingi i drogi</a><a href="odwodnienia-i-drenaze.html">Odwodnienia i drenaże</a><a href="mycie-kostki-brukowej.html">Mycie kostki brukowej</a><a href="wyburzenia-i-skuwanie.html">Wyburzenia i skuwanie</a></div>
+      </li>
+      <li><a href="realizacje.html">Realizacje</a></li>
+      <li><a href="o-nas.html">O nas</a></li>
+      <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+    </ul>
+    <a href="tel:+48515643620" class="btn btn-y">515 643 620</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
+  </div>
+</header>
+<div class="phero">
+  <div class="phero-bg"><img src="img/g5.jpg" alt="Kontakt — Kruszbruk"></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">Start</a> &nbsp;/&nbsp; Kontakt</div>
+    <h1>Kontakt</h1>
+    <p>Zadzwoń albo napisz — umówimy pomiar i podamy konkretną kwotę za całość. Wycena jest bezpłatna.</p>
+  </div>
+</div>
+
+<section>
+  <div class="wrap split">
+    <div class="rv">
+      <div class="eyebrow">Napisz do nas</div>
+      <h2>Opisz robotę,<br>oddzwonimy z terminem</h2>
+      <p class="lead" style="margin-top:14px">Wpisz kilka zdań o tym, co ma być zrobione i gdzie. Odezwiemy się i umówimy pomiar — najczęściej jeszcze tego samego dnia.</p>
+      <form id="form" style="margin-top:26px;display:grid;gap:14px;max-width:520px">
+        <input required name="imie" placeholder="Imię i nazwisko" style="padding:15px 16px;border:1px solid var(--line);font:inherit">
+        <input required name="tel" placeholder="Telefon" style="padding:15px 16px;border:1px solid var(--line);font:inherit">
+        <input name="miejsce" placeholder="Miejscowość" style="padding:15px 16px;border:1px solid var(--line);font:inherit">
+        <select name="zakres" style="padding:15px 16px;border:1px solid var(--line);font:inherit">
+          <option value="">Czego dotyczy robota?</option><option value="Podjazdy i dojazdy">Podjazdy i dojazdy</option><option value="Tarasy i ścieżki">Tarasy i ścieżki</option><option value="Place, parkingi i drogi">Place, parkingi i drogi</option><option value="Odwodnienia i drenaże">Odwodnienia i drenaże</option><option value="Mycie kostki brukowej">Mycie kostki brukowej</option><option value="Wyburzenia i skuwanie">Wyburzenia i skuwanie</option><option value="Coś innego">Coś innego</option>
+        </select>
+        <textarea name="opis" rows="5" placeholder="Krótki opis — co, gdzie, mniej więcej ile metrów" style="padding:15px 16px;border:1px solid var(--line);font:inherit;resize:vertical"></textarea>
+        <button type="submit" class="btn btn-k" style="justify-self:start">Wyślij zgłoszenie</button>
+        <small style="color:var(--muted)">Wysyłka otwiera Twój program pocztowy z gotową wiadomością do biuro@kruszbruk.pl.</small>
+      </form>
+    </div>
+    <div class="rv">
+      <div class="card" style="padding:34px">
+        <div class="eyebrow">Bezpośrednio</div>
+        <h3 style="font-size:30px;margin-bottom:18px">Najszybciej — telefon</h3>
+        <ul class="check" style="margin-top:0">
+          <li><a href="tel:+48515643620"><b>515 643 620</b> — Hubert Kruszewski</a></li>
+          <li><a href="tel:+48732123123"><b>732 123 123</b> — drugi numer</a></li>
+          <li><a href="mailto:biuro@kruszbruk.pl">biuro@kruszbruk.pl</a></li>
+          <li>Jaczew 7, 07-120 Korytnica</li>
+          <li>pon.–sob. 7:00–19:00</li>
+        </ul>
+        <div style="margin-top:26px;display:flex;gap:12px;flex-wrap:wrap">
+          <a href="tel:+48515643620" class="btn btn-y">Zadzwoń teraz</a>
+          <a href="https://www.google.com/maps?q=Jaczew+7,+07-120+Korytnica" target="_blank" rel="noopener" class="btn btn-o">Jak dojechać</a>
+        </div>
+      </div>
+      <div style="margin-top:22px">
+        <iframe class="map" title="Mapa — Kruszbruk, Jaczew 7, Korytnica" src="https://www.google.com/maps?q=Jaczew%207,%2007-120%20Korytnica&output=embed" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="smoke">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:30px">
+      <div class="eyebrow">Obszar działania</div>
+      <h2>Gdzie dojeżdżamy</h2>
+      <p class="lead" style="margin-top:14px">Korytnica i okolice w promieniu około 70 km. Jeśli Twojej miejscowości nie ma na liście — zadzwoń, przy większej robocie zwykle da się dograć.</p>
+      <div class="area"><span class="chip hot">Korytnica</span><span class="chip">Węgrów</span><span class="chip">Łochów</span><span class="chip">Wyszków</span><span class="chip">Radzymin</span><span class="chip">Wołomin</span><span class="chip">Marki</span><span class="chip">Zielonka</span><span class="chip">Mińsk Mazowiecki</span><span class="chip">Sokołów Podlaski</span><span class="chip">Warszawa</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap in">
+    <div class="eyebrow">Bezpłatna wycena</div>
+    <h2>Umówmy pomiar</h2>
+    <p>Zadzwoń albo napisz — przyjeżdżamy, mierzymy i podajemy konkretną kwotę za całość. Za darmo i bez zobowiązań. Decyzję podejmujesz po poznaniu ceny, nie przed.</p>
+    <div class="cta-row">
+      <a href="tel:+48515643620" class="btn btn-k">Zadzwoń — 515 643 620</a>
+      <a href="kontakt.html" class="btn btn-o">Formularz kontaktowy</a>
+    </div>
+  </div>
+</section>
+<script>
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target, d=new FormData(f);
+  var tresc='Imię i nazwisko: '+(d.get('imie')||'')+'\nTelefon: '+(d.get('tel')||'')+
+            '\nMiejscowość: '+(d.get('miejsce')||'')+'\nZakres: '+(d.get('zakres')||'')+
+            '\n\nOpis:\n'+(d.get('opis')||'');
+  location.href='mailto:biuro@kruszbruk.pl?subject='+encodeURIComponent('Zapytanie ze strony — '+(d.get('zakres')||'wycena'))+
+                '&body='+encodeURIComponent(tresc);
+});
+</script>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="index.html" class="brand" style="margin-bottom:16px"><i>K</i>Krusz<em>bruk</em></a>
+        <p style="margin-top:14px">Przedsiębiorstwo Usługowe Kruszbruk — Hubert Kruszewski. Brukarstwo, odwodnienia, mycie kostki i roboty rozbiórkowe. Korytnica, powiat węgrowski, Wyszków i Warszawa.</p>
+      </div>
+      <div><h4>Oferta</h4><ul><li><a href="podjazdy-i-dojazdy.html">Podjazdy i dojazdy</a></li><li><a href="tarasy-i-sciezki.html">Tarasy i ścieżki</a></li><li><a href="place-parkingi-drogi.html">Place, parkingi i drogi</a></li><li><a href="odwodnienia-i-drenaze.html">Odwodnienia i drenaże</a></li><li><a href="mycie-kostki-brukowej.html">Mycie kostki brukowej</a></li><li><a href="wyburzenia-i-skuwanie.html">Wyburzenia i skuwanie</a></li></ul></div>
+      <div><h4>Firma</h4><ul><li><a href="o-nas.html">O nas</a></li><li><a href="realizacje.html">Realizacje</a></li><li><a href="kontakt.html">Kontakt</a></li></ul></div>
+      <div><h4>Kontakt</h4><ul>
+        <li><a href="tel:+48515643620">515 643 620</a></li>
+        <li><a href="tel:+48732123123">732 123 123</a></li>
+        <li><a href="mailto:biuro@kruszbruk.pl">biuro@kruszbruk.pl</a></li>
+        <li>Jaczew 7, 07-120 Korytnica</li>
+        <li>NIP 8241806832</li>
+        <li>REGON 380025860</li>
+      </ul></div>
+    </div>
+    <div class="fbot"><span>&copy; 2026 Kruszbruk — Hubert Kruszewski</span><span>Projekt strony: Impulseo</span></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+48515643620">Zadzwoń</a>
+  <a href="kontakt.html">Bezpłatna wycena</a>
+</div>
+
+<script src="assets/main.js" defer></script>
+</body>
+</html>
