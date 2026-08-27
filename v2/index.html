@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kruszbruk — brukarstwo, podjazdy i place | Korytnica, Warszawa i okolice</title>
+<meta name="description" content="Kruszbruk — Hubert Kruszewski. Kostka brukowa, podjazdy, tarasy, parkingi, odwodnienia, mycie kostki. Korytnica, Węgrów, Wyszków, Warszawa. Bezpłatna wycena z pomiarem, 5 lat gwarancji.">
+<meta property="og:title" content="Kruszbruk — brukarstwo Korytnica i Warszawa">
+<meta property="og:description" content="Podjazdy, tarasy, parkingi i odwodnienia z kostki. Cenę znasz po pomiarze — i w trakcie roboty już nie rośnie.">
+<meta property="og:image" content="img/og.jpg">
+<link rel="icon" href="img/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0d0e11; --bg2:#131519; --card:#181b21; --line:#262a33;
+  --txt:#e9eaee; --muted:#9aa0ab; --acc:#f2a516; --acc2:#ffc04d;
+  --max:1200px; --r:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+h1,h2,h3,.disp{font-family:'Barlow Condensed',Impact,sans-serif;font-weight:700;line-height:1.05;letter-spacing:.5px;text-transform:uppercase}
+h2{font-size:clamp(34px,5.5vw,62px)}
+.eyebrow{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:3px;font-size:15px;font-weight:600;color:var(--acc);display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.eyebrow::before{content:"";width:34px;height:2px;background:var(--acc)}
+.lead{color:var(--muted);font-size:18px;max-width:62ch}
+section{padding:clamp(64px,9vw,120px) 0;position:relative}
+
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:.35s;padding:16px 0}
+header.on{background:rgba(13,14,17,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:10px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;position:relative}
+.brand{display:flex;align-items:center;gap:11px;font-family:'Barlow Condensed',sans-serif;font-size:27px;font-weight:700;text-transform:uppercase;letter-spacing:1px}
+.brand span{color:var(--acc)}
+.brand i{width:40px;height:40px;border-radius:9px;background:var(--acc);display:grid;place-items:center;color:#111;font-style:normal;font-size:22px}
+.menu{display:flex;gap:24px;font-size:15px;font-weight:500}
+.menu a{color:#c9cdd6;transition:.2s;position:relative;padding:4px 0}
+.menu a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:2px;background:var(--acc);transition:.25s}
+.menu a:hover{color:#fff}.menu a:hover::after{width:100%}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-weight:700;padding:15px 26px;border-radius:9px;transition:.22s;font-size:16px;border:0;cursor:pointer;white-space:nowrap}
+.btn-p{background:var(--acc);color:#14161a;box-shadow:0 8px 26px rgba(242,165,22,.28)}
+.btn-p:hover{background:var(--acc2);transform:translateY(-2px);box-shadow:0 12px 32px rgba(242,165,22,.4)}
+.btn-g{border:1.5px solid #40454f;color:#fff}
+.btn-g:hover{border-color:var(--acc);color:var(--acc)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:28px;cursor:pointer}
+
+.hero{min-height:100svh;display:flex;align-items:center;position:relative;padding:130px 0 70px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;transform:scale(1.06);animation:kb 22s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,rgba(10,11,14,.96) 0%,rgba(10,11,14,.87) 45%,rgba(10,11,14,.42) 100%)}
+.hero h1{font-size:clamp(44px,8vw,100px);margin:8px 0 22px;max-width:16ch}
+.hero h1 em{font-style:normal;color:var(--acc);display:block}
+.hero p{font-size:clamp(17px,2vw,21px);color:#c6cad2;max-width:56ch;margin-bottom:34px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+.badges{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.11);backdrop-filter:blur(8px);padding:11px 17px;border-radius:100px;font-size:14.5px;font-weight:600}
+.badge b{color:var(--acc)}
+.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-size:12px;letter-spacing:3px;color:#7d838f;text-transform:uppercase;font-weight:600;animation:bob 2.2s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,9px)}}
+
+.stats{background:var(--acc);color:#16181c}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:34px 18px;text-align:center;border-right:1px solid rgba(0,0,0,.13)}
+.stat:last-child{border-right:0}
+.stat .n{font-family:'Barlow Condensed',sans-serif;font-size:clamp(38px,5vw,60px);font-weight:700;line-height:1}
+.stat .l{font-size:13.5px;font-weight:600;text-transform:uppercase;letter-spacing:1.4px;opacity:.72;margin-top:5px}
+
+.grid{display:grid;gap:22px}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:30px;transition:.28s;position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;height:3px;width:0;background:var(--acc);transition:.35s}
+.card:hover{transform:translateY(-6px);border-color:#3a404b;background:#1c1f26}
+.card:hover::before{width:100%}
+.card .ico{width:52px;height:52px;border-radius:12px;background:rgba(242,165,22,.13);color:var(--acc);display:grid;place-items:center;font-size:25px;margin-bottom:18px}
+.card h3{font-size:25px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15.6px}
+.card .more{color:var(--acc);font-weight:600;font-size:14.5px;margin-top:16px;display:inline-block}
+
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.step{padding:30px 26px 30px 0;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:'Barlow Condensed',sans-serif;font-size:56px;font-weight:700;color:#22262e;line-height:.9;display:block;margin-bottom:12px;transition:.3s}
+.step:hover::before{color:var(--acc)}
+.step h3{font-size:22px;margin-bottom:8px}
+.step p{color:var(--muted);font-size:15px}
+
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gi{position:relative;overflow:hidden;border-radius:11px;cursor:pointer;aspect-ratio:4/3;background:#1a1d23}
+.gi img{width:100%;height:100%;object-fit:cover;transition:.55s}
+.gi:hover img{transform:scale(1.09)}
+.gi::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.75));opacity:0;transition:.35s}
+.gi:hover::after{opacity:1}
+.gi.big{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gi .tag{position:absolute;left:14px;bottom:12px;font-size:13.5px;font-weight:600;opacity:0;transform:translateY(8px);transition:.35s;z-index:2}
+.gi:hover .tag{opacity:1;transform:none}
+
+.op{background:var(--bg2)}
+.rev{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;gap:14px}
+.stars{color:var(--acc);letter-spacing:3px;font-size:16px}
+.rev p{font-size:16.5px;line-height:1.62}
+.rev .who{display:flex;align-items:center;gap:11px;margin-top:auto;padding-top:10px;border-top:1px solid var(--line)}
+.av{width:40px;height:40px;border-radius:50%;background:var(--acc);color:#16181c;display:grid;place-items:center;font-weight:700;flex:0 0 auto}
+.who b{display:block;font-size:15px}
+.who span{font-size:13px;color:var(--muted)}
+.scores{display:flex;gap:16px;flex-wrap:wrap;margin:26px 0 34px}
+.gscore{display:flex;align-items:center;gap:16px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 24px}
+.gscore .big{font-family:'Barlow Condensed',sans-serif;font-size:48px;font-weight:700;line-height:1;color:var(--acc)}
+
+.faq{border-top:1px solid var(--line)}
+.q{border-bottom:1px solid var(--line);padding:22px 0;cursor:pointer}
+.q h3{font-size:21px;display:flex;justify-content:space-between;align-items:center;gap:16px;transition:.2s}
+.q h3 i{font-style:normal;color:var(--acc);font-size:26px;transition:.3s;flex:0 0 auto}
+.q.open h3 i{transform:rotate(45deg)}
+.q:hover h3{color:var(--acc)}
+.q .a{max-height:0;overflow:hidden;transition:.4s;color:var(--muted)}
+.q.open .a{max-height:400px;padding-top:12px}
+
+.cta{background:linear-gradient(120deg,#1a1d24,#101216);border:1px solid var(--line);border-radius:20px;padding:clamp(34px,5vw,62px);text-align:center;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;width:520px;height:520px;background:radial-gradient(circle,rgba(242,165,22,.15),transparent 68%);top:-240px;right:-160px}
+.cta h2{margin-bottom:14px}
+.cta .lead{margin:0 auto 30px}
+.cta .eyebrow{justify-content:center}
+
+.area{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{border:1px solid var(--line);background:var(--card);padding:10px 18px;border-radius:100px;font-size:14.5px;font-weight:600}
+.chip.hot{border-color:var(--acc);color:var(--acc)}
+
+footer{background:#08090b;border-top:1px solid var(--line);padding:56px 0 28px}
+.fgrid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:34px;margin-bottom:36px}
+footer h4{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:1.5px;font-size:17px;margin-bottom:14px;color:#fff}
+footer a,footer p,footer li{color:var(--muted);font-size:15.4px}
+footer a:hover{color:var(--acc)}
+footer li{list-style:none;margin-bottom:8px}
+.fbot{border-top:1px solid var(--line);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:13.6px;color:#6b7079}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;gap:1px;background:var(--line)}
+.callbar a{flex:1;padding:15px;text-align:center;font-weight:700;background:var(--acc);color:#14161a;font-size:16px}
+.callbar a.alt{background:#1b1e25;color:#fff}
+
+.lb{position:fixed;inset:0;background:rgba(6,7,9,.96);z-index:100;display:none;align-items:center;justify-content:center;padding:24px}
+.lb.on{display:flex}
+.lb img{max-width:94vw;max-height:88vh;border-radius:10px}
+.lb .x{position:absolute;top:20px;right:26px;font-size:38px;color:#fff;cursor:pointer;line-height:1}
+.lb .nv{position:absolute;top:50%;transform:translateY(-50%);font-size:44px;color:#fff;cursor:pointer;padding:14px;user-select:none;opacity:.75}
+.lb .nv:hover{opacity:1}
+.lb .prev{left:14px}.lb .next{right:14px}
+
+.rv{opacity:0;transform:translateY(26px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+.rv.in{opacity:1;transform:none}
+
+@media(max-width:960px){
+  .g3,.g2{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .step{border-right:0;border-bottom:1px solid var(--line);padding-right:18px}
+  .gal{grid-template-columns:1fr 1fr}
+  .gi.big{grid-column:span 2;grid-row:span 1;aspect-ratio:4/3}
+  .fgrid{grid-template-columns:1fr}
+  .menu{display:none}
+  .nav>.btn{display:none}
+  .burger{display:block}
+  .callbar{display:flex}
+  body{padding-bottom:54px}
+  .stats .wrap{grid-template-columns:1fr 1fr}
+  .stat{border-bottom:1px solid rgba(0,0,0,.13)}
+  .menu.open{display:flex;position:absolute;top:58px;left:0;right:0;flex-direction:column;background:#101217;border:1px solid var(--line);border-radius:12px;padding:18px 22px;gap:14px}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap nav">
+    <a href="#" class="brand"><i>K</i>Krusz<span>bruk</span></a>
+    <nav class="menu" id="mn">
+      <a href="#oferta">Oferta</a>
+      <a href="#jak">Jak pracujemy</a>
+      <a href="#realizacje">Realizacje</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#obszar">Obszar</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a href="tel:+48515643620" class="btn btn-p">515 643 620</a>
+    <button class="burger" onclick="document.getElementById('mn').classList.toggle('open')">&#9776;</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="hero-bg"><img src="img/hero.jpg" alt="Podjazd z kostki brukowej — realizacja Kruszbruk"></div>
+  <div class="wrap">
+    <div class="eyebrow">Brukarstwo &middot; Korytnica, Wyszków, Warszawa</div>
+    <h1>Podjazd, który<em>trzyma pion</em></h1>
+    <p>Kostka, taras, plac, odwodnienie. Robimy tak, żeby za pięć lat nadal było równo — bo cała robota rozstrzyga się pod ziemią, w podbudowie.</p>
+    <div class="hero-cta">
+      <a href="tel:+48515643620" class="btn btn-p">Zadzwoń — 515 643 620</a>
+      <a href="#kontakt" class="btn btn-g">Bezpłatna wycena z pomiarem</a>
+    </div>
+    <div class="badges">
+      <div class="badge">&#9733; <b>4,7</b> w Google</div>
+      <div class="badge">&#9733; <b>5,0</b> na Oferteo</div>
+      <div class="badge">&#128737; <b>5 lat</b> gwarancji</div>
+      <div class="badge">Wycena <b>za 0 zł</b></div>
+    </div>
+  </div>
+  <div class="scroll-hint">przewiń</div>
+</div>
+
+<div class="stats">
+  <div class="wrap">
+    <div class="stat"><div class="n" data-c="4.7">0</div><div class="l">ocena w Google</div></div>
+    <div class="stat"><div class="n" data-c="5">0</div><div class="l">lat gwarancji</div></div>
+    <div class="stat"><div class="n" data-c="70">0</div><div class="l">km dojazdu</div></div>
+    <div class="stat"><div class="n" data-c="0">0</div><div class="l">dopłat po wycenie</div></div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap grid g2" style="align-items:center;gap:56px">
+    <div class="rv">
+      <div class="eyebrow">Dlaczego my</div>
+      <h2>Cenę znasz<br>przed pierwszą łopatą</h2>
+      <p class="lead" style="margin-top:18px">Najczęstsza skarga na brukarzy nie dotyczy kostki, tylko tego, że w połowie roboty cena rośnie, a ekipa znika na inną budowę. U nas jest odwrotnie: przyjeżdżamy, mierzymy, podajemy kwotę za całość — i ta kwota się nie zmienia. Wchodzimy w umówionym terminie i robimy do końca.</p>
+      <div class="grid" style="gap:12px;margin-top:26px">
+        <div class="badge" style="width:fit-content">Wycena po pomiarze na miejscu, nie przez telefon</div>
+        <div class="badge" style="width:fit-content">Wywóz ziemi i starej nawierzchni w cenie</div>
+        <div class="badge" style="width:fit-content">Odbiór razem z Tobą — poprawki przed rozliczeniem</div>
+        <div class="badge" style="width:fit-content">Kostka z materiałem od nas albo sama robocizna</div>
+      </div>
+    </div>
+    <div class="rv"><img src="img/about.jpg" alt="Ekipa Kruszbruk przy układaniu kostki brukowej" style="border-radius:var(--r);width:100%"></div>
+  </div>
+</section>
+
+<section id="oferta" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:44px">
+      <div class="eyebrow">Zakres robót</div>
+      <h2>Co robimy</h2>
+      <p class="lead" style="margin-top:16px">Dla domów prywatnych i dla firm. Każda pozycja wyceniana po oględzinach terenu — za przyjazd nie płacisz.</p>
+    </div>
+    <div class="grid g3">
+      <div class="card rv"><div class="ico">&#128664;</div><h3>Podjazdy i dojazdy</h3><p>Podjazd codziennie trzyma auto, więc najwięcej pracy idzie w spód: koryto na właściwą głębokość, kruszywo zagęszczane warstwa po warstwie, podsypka i dopiero kostka — pod auto grubsza niż na ścieżkę.</p><span class="more">Bezpłatna wycena &rarr;</span></div>
+      <div class="card rv"><div class="ico">&#127794;</div><h3>Tarasy i ścieżki</h3><p>Kostka, płyty tarasowe, kamień czy granit — każdy materiał inaczej znosi słońce, mróz i mech. Doradzamy, co się sprawdzi u Ciebie, zanim kupisz.</p><span class="more">Bezpłatna wycena &rarr;</span></div>
+      <div class="card rv"><div class="ico">&#128739;</div><h3>Place, parkingi i drogi</h3><p>Plac manewrowy i parking firmowy to inna robota niż ścieżka — auta dostawcze wymagają głębszego koryta i mocniejszego zagęszczenia. Robimy pod realne obciążenie, nie „na oko”.</p><span class="more">Bezpłatna wycena &rarr;</span></div>
+      <div class="card rv"><div class="ico">&#128167;</div><h3>Odwodnienia i drenaże</h3><p>Kałuża pod bramą i mokra ściana garażu to znak, że woda nie ma dokąd spływać. Instalacje deszczowe i drenaż wokół budynku projektujemy razem z nawierzchnią, ze spadkami zgodnymi z prawem wodnym.</p><span class="more">Bezpłatna wycena &rarr;</span></div>
+      <div class="card rv"><div class="ico">&#129529;</div><h3>Mycie i czyszczenie kostki</h3><p>Mycie wysokociśnieniowe profesjonalnym sprzętem: plamy oleju, ślady opon, mech, glony, farby, graffiti. Parkingi, stacje paliw, place handlowe i posesje prywatne — stara kostka wraca do koloru bez wymiany.</p><span class="more">Bezpłatna wycena &rarr;</span></div>
+      <div class="card rv"><div class="ico">&#9935;</div><h3>Wyburzenia, skuwanie, podbudowa</h3><p>Skuwanie posadzek, wyburzenia ścian i budynków, wycinanie otworów, korytowanie. Geowłóknina tam, gdzie grunt słaby, kruszywo sypane warstwami — każdą przejeżdżamy zagęszczarką, zanim wjedzie następna.</p><span class="more">Bezpłatna wycena &rarr;</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="jak">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:40px">
+      <div class="eyebrow">Jak pracujemy</div>
+      <h2>Wiesz, na czym stoisz —<br>na każdym etapie</h2>
+    </div>
+    <div class="steps rv">
+      <div class="step"><h3>Dzwonisz</h3><p>Telefon albo zdjęcia terenu. Po krótkiej rozmowie wiesz, czy to robota dla nas i kiedy możemy być na pomiarze.</p></div>
+      <div class="step"><h3>Pomiar i wycena</h3><p>Wycena jest z pomiaru, nie z telefonu. Po oględzinach wiesz, ile płacisz, co wchodzi w cenę i kiedy wchodzimy na teren.</p></div>
+      <div class="step"><h3>Robota</h3><p>Wchodzimy w umówionym terminie i robimy swoje do końca — nie znikamy w połowie na inną budowę.</p></div>
+      <div class="step"><h3>Odbiór i gwarancja</h3><p>Przechodzimy razem po całej nawierzchni. Coś Ci nie gra — poprawiamy, zanim rozliczymy robotę.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="realizacje" style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:36px">
+      <div class="eyebrow">Realizacje</div>
+      <h2>Z ostatnich robót</h2>
+      <p class="lead" style="margin-top:16px">Każda z tych nawierzchni ma właściciela, który po niej codziennie jeździ albo chodzi. Bez dobierania kadrów i podkręcania kolorów.</p>
+    </div>
+    <div class="gal rv" id="gal">
+      <div class="gi big"><img src="img/g3.jpg" alt="Podjazd z kostki brukowej"><span class="tag">Podjazd do garażu</span></div>
+      <div class="gi"><img src="img/g4.jpg" alt="Taras z kostki brukowej"><span class="tag">Taras</span></div>
+      <div class="gi"><img src="img/g5.jpg" alt="Ścieżka wokół domu z kostki"><span class="tag">Ścieżka wokół domu</span></div>
+      <div class="gi"><img src="img/g6.jpg" alt="Plac utwardzony kostką"><span class="tag">Plac</span></div>
+      <div class="gi"><img src="img/g7.jpg" alt="Dojazd do posesji"><span class="tag">Dojazd do posesji</span></div>
+      <div class="gi"><img src="img/g8.jpg" alt="Obrzeża i palisada"><span class="tag">Obrzeża i palisady</span></div>
+      <div class="gi"><img src="img/g9.jpg" alt="Kostka brukowa przy domu"><span class="tag">Otoczenie domu</span></div>
+      <div class="gi"><img src="img/g10.jpg" alt="Parking z kostki brukowej"><span class="tag">Parking</span></div>
+      <div class="gi"><img src="img/g11.jpg" alt="Podjazd z kostki brukowej"><span class="tag">Podjazd</span></div>
+      <div class="gi"><img src="img/g12.jpg" alt="Nawierzchnia z kostki"><span class="tag">Nawierzchnia</span></div>
+      <div class="gi"><img src="img/g14.jpg" alt="Realizacja Kruszbruk"><span class="tag">Realizacja</span></div>
+      <div class="gi"><img src="img/g1.jpg" alt="Realizacja Kruszbruk"><span class="tag">Realizacja</span></div>
+      <div class="gi"><img src="img/g2.jpg" alt="Realizacja Kruszbruk"><span class="tag">Realizacja</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="opinie" class="op">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">Opinie</div>
+      <h2>Co mówią klienci</h2>
+      <div class="scores">
+        <div class="gscore"><div class="big">4,7</div><div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div style="font-size:14.5px;color:var(--muted)">wizytówka Google</div></div></div>
+        <div class="gscore"><div class="big">5,0</div><div><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><div style="font-size:14.5px;color:var(--muted)">Oferteo &middot; 8 lat na portalu</div></div></div>
+      </div>
+    </div>
+    <div class="grid g3">
+      <div class="rev rv"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>„Właściciel firmy bardzo pomocny — nawet już po skończeniu i rozliczeniu całej inwestycji. Dalej można do Niego dzwonić i służy pomocą, bardzo dobry kontakt. Na wszystko firma udziela 5 lat gwarancji.”</p><div class="who"><div class="av">R</div><div><b>Radosław Bobowski</b><span>opinia w Google</span></div></div></div>
+      <div class="rev rv"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>„Droga wewnętrzna oraz nawierzchnia z kostki brukowej zostały wykonane solidnie, estetycznie i zgodnie z ustaleniami. Prace przebiegły sprawnie i terminowo. Bardzo dobry kontakt, uczciwa cena i świetny efekt końcowy.”</p><div class="who"><div class="av">P</div><div><b>P. K.</b><span>opinia w Oferteo</span></div></div></div>
+      <div class="rev rv"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>„Profesjonalna ekipa pracowitych i zorganizowanych ludzi. Można śmiało polecać, a ja rzadko kogoś polecam. Wiedzą co robią i są staranni.”</p><div class="who"><div class="av">A</div><div><b>Agnes RRR</b><span>opinia w Google</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="obszar">
+  <div class="wrap grid g2" style="gap:48px;align-items:center">
+    <div class="rv">
+      <div class="eyebrow">Obszar działania</div>
+      <h2>Dojeżdżamy do Ciebie</h2>
+      <p class="lead" style="margin-top:16px">Baza w Jaczewie pod Korytnicą, robimy w promieniu ok. 70 km — od powiatu węgrowskiego po Warszawę. Dalej? Zadzwoń, przy większej robocie zwykle da się dograć.</p>
+      <div class="area">
+        <span class="chip hot">Korytnica</span><span class="chip">Węgrów</span><span class="chip">Łochów</span>
+        <span class="chip">Wyszków</span><span class="chip">Radzymin</span><span class="chip">Wołomin</span>
+        <span class="chip">Marki</span><span class="chip">Zielonka</span><span class="chip">Mińsk Mazowiecki</span>
+        <span class="chip">Sokołów Podlaski</span><span class="chip">Warszawa</span>
+      </div>
+    </div>
+    <div class="rv" style="border-radius:var(--r);overflow:hidden;border:1px solid var(--line)">
+      <iframe title="Mapa — Kruszbruk, Jaczew 7, Korytnica" src="https://www.google.com/maps?q=Jaczew%207,%2007-120%20Korytnica&output=embed" width="100%" height="340" style="border:0;display:block;filter:grayscale(.35) contrast(1.05)" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--bg2)">
+  <div class="wrap">
+    <div class="rv" style="margin-bottom:34px">
+      <div class="eyebrow">Częste pytania</div>
+      <h2>Dobrze wiedzieć</h2>
+    </div>
+    <div class="faq rv">
+      <div class="q"><h3>Ile kosztuje ułożenie kostki?<i>+</i></h3><div class="a"><p>Zależy od terenu i materiału — inna cena wychodzi na piasku, inna tam, gdzie trzeba głębiej korytować i wywozić ziemię. Dlatego cenę podajemy dopiero po pomiarze — i w trakcie roboty ona już nie rośnie.</p></div></div>
+      <div class="q"><h3>Czy wycena jest płatna?<i>+</i></h3><div class="a"><p>Nie. Za przyjazd i pomiar w Korytnicy i okolicy nie płacisz. Decyzję podejmujesz po poznaniu ceny, nie przed.</p></div></div>
+      <div class="q"><h3>Kostka z materiałem czy sama robocizna?<i>+</i></h3><div class="a"><p>Oba układy są w porządku. Z materiałem od nas masz jedną cenę i jednego odpowiedzialnego za całość; z powierzonym — najpierw go obejrzymy, bo nie każda kostka nadaje się pod auto.</p></div></div>
+      <div class="q"><h3>Jak długo trwa taka robota?<i>+</i></h3><div class="a"><p>Ścieżka to kilka dni, duży podjazd z korytowaniem — dłużej. Przy wycenie dostajesz termin wejścia i termin odbioru; między nimi robota idzie ciągiem, bez tygodniowych przerw.</p></div></div>
+      <div class="q"><h3>Co z ziemią z koryta i starą nawierzchnią?<i>+</i></h3><div class="a"><p>Wywóz jest w wycenie — po robocie nie zostaje hałda ziemi ani sterta starego betonu. Chcesz zatrzymać ziemię na podniesienie ogrodu? Powiedz przy pomiarze, zostawimy ją tam, gdzie wskażesz.</p></div></div>
+      <div class="q"><h3>Da się odświeżyć starą kostkę zamiast układać nową?<i>+</i></h3><div class="a"><p>Bardzo często tak. Mycie wysokociśnieniowe z profesjonalnym detergentem ściąga mech, glony, plamy oleju i ślady opon — kostka wraca do koloru za ułamek ceny nowej nawierzchni. Przy pomiarze mówimy wprost, czy w Twoim przypadku wystarczy mycie, czy trzeba przekładać.</p></div></div>
+      <div class="q"><h3>Co, jeśli kostka się zapadnie?<i>+</i></h3><div class="a"><p>Dobrze zagęszczona podbudowa nie siada — ale jak coś się ruszy, wracamy i poprawiamy. Nasza wina — robimy za darmo; wjechało tam coś dużo cięższego, niż ustalaliśmy — mówimy wprost, co i za ile. Na robociznę dajemy 5 lat gwarancji.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="kontakt">
+  <div class="wrap">
+    <div class="cta rv">
+      <div class="eyebrow">Bezpłatna wycena</div>
+      <h2>Umówmy pomiar</h2>
+      <p class="lead" style="text-align:center">Zadzwoń albo napisz — przyjedziemy, zmierzymy i podamy konkretną kwotę za całość. Za darmo, bez zobowiązań.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="tel:+48515643620" class="btn btn-p">515 643 620</a>
+        <a href="mailto:biuro@kruszbruk.pl" class="btn btn-g">biuro@kruszbruk.pl</a>
+        <a href="https://www.google.com/maps?q=Jaczew+7,+07-120+Korytnica" target="_blank" rel="noopener" class="btn btn-g">Jaczew 7, Korytnica</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a href="#" class="brand" style="margin-bottom:14px"><i>K</i>Krusz<span>bruk</span></a>
+        <p style="max-width:46ch;margin-top:12px">Przedsiębiorstwo Usługowe Kruszbruk — Hubert Kruszewski. Brukarstwo, odwodnienia, mycie kostki i wyburzenia. Korytnica, powiat węgrowski, Wyszków i Warszawa. Cenę za całość znasz po pomiarze — i ona się nie zmienia.</p>
+      </div>
+      <div>
+        <h4>Oferta</h4>
+        <ul>
+          <li><a href="#oferta">Podjazdy i dojazdy</a></li>
+          <li><a href="#oferta">Tarasy i ścieżki</a></li>
+          <li><a href="#oferta">Place, parkingi, drogi</a></li>
+          <li><a href="#oferta">Odwodnienia i drenaże</a></li>
+          <li><a href="#oferta">Mycie kostki brukowej</a></li>
+          <li><a href="#oferta">Wyburzenia i skuwanie</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul>
+          <li><a href="tel:+48515643620">+48 515 643 620</a></li>
+          <li><a href="tel:+48732123123">+48 732 123 123</a></li>
+          <li><a href="mailto:biuro@kruszbruk.pl">biuro@kruszbruk.pl</a></li>
+          <li>Jaczew 7, 07-120 Korytnica</li>
+          <li>NIP 8241806832 &middot; REGON 380025860</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fbot"><span>&copy; 2026 Kruszbruk — Hubert Kruszewski</span><span>Projekt strony: Impulseo</span></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+48515643620">Zadzwoń</a>
+  <a href="#kontakt" class="alt">Bezpłatna wycena</a>
+</div>
+
+<div class="lb" id="lb"><span class="x" onclick="lbClose()">&times;</span><span class="nv prev" onclick="lbMove(-1)">&lsaquo;</span><img id="lbimg" src="" alt="Realizacja Kruszbruk"><span class="nv next" onclick="lbMove(1)">&rsaquo;</span></div>
+
+<script>
+addEventListener('scroll',function(){document.getElementById('hd').classList.toggle('on',scrollY>40)});
+
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){
+  if(!e.isIntersecting)return;
+  var el=e.target,t=parseFloat(el.dataset.c),dec=t%1!==0,s=null;
+  function step(ts){s=s||ts;var p=Math.min((ts-s)/1100,1);
+    el.textContent=dec?(t*p).toFixed(1).replace('.',','):Math.round(t*p);
+    if(p<1)requestAnimationFrame(step)}
+  requestAnimationFrame(step);cio.unobserve(el)})},{threshold:.5});
+document.querySelectorAll('[data-c]').forEach(function(el){cio.observe(el)});
+
+document.querySelectorAll('.q').forEach(function(q){q.addEventListener('click',function(){q.classList.toggle('open')})});
+document.querySelectorAll('#mn a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mn').classList.remove('open')})});
+
+var imgs=Array.prototype.slice.call(document.querySelectorAll('#gal img')),cur=0;
+imgs.forEach(function(im,i){im.parentElement.addEventListener('click',function(){cur=i;lbShow()})});
+function lbShow(){document.getElementById('lbimg').src=imgs[cur].src;document.getElementById('lb').classList.add('on')}
+function lbClose(){document.getElementById('lb').classList.remove('on')}
+function lbMove(d){cur=(cur+d+imgs.length)%imgs.length;lbShow()}
+document.getElementById('lb').addEventListener('click',function(e){if(e.target.id==='lb')lbClose()});
+addEventListener('keydown',function(e){
+  if(!document.getElementById('lb').classList.contains('on'))return;
+  if(e.key==='Escape')lbClose();if(e.key==='ArrowRight')lbMove(1);if(e.key==='ArrowLeft')lbMove(-1)});
+</script>
+</body>
+</html>
