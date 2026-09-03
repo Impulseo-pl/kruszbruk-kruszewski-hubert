@@ -52,6 +52,30 @@
     document.querySelectorAll('[data-c]').forEach(function(el){ cio.observe(el); });
   }
 
+  /* parallax zdjęć w tle sekcji opisowych */
+  var pars = [].slice.call(document.querySelectorAll('[data-par] img'));
+  if (pars.length && !(window.matchMedia && matchMedia('(prefers-reduced-motion:reduce)').matches)){
+    var czeka = false;
+    function przesun(){
+      var h = innerHeight;
+      pars.forEach(function(im){
+        var box = im.parentElement.getBoundingClientRect();
+        if (box.bottom < -200 || box.top > h + 200) return;
+        var w = parseFloat(im.parentElement.dataset.par) || .12;
+        var srodek = box.top + box.height / 2 - h / 2;
+        im.style.transform = 'translate3d(0,' + (-srodek * w).toFixed(1) + 'px,0)';
+      });
+      czeka = false;
+    }
+    addEventListener('scroll', function(){
+      if (czeka) return;
+      czeka = true;
+      requestAnimationFrame(przesun);
+    }, {passive:true});
+    addEventListener('resize', przesun, {passive:true});
+    przesun();
+  }
+
   /* FAQ */
   document.querySelectorAll('.q').forEach(function(q){
     q.addEventListener('click', function(){ q.classList.toggle('open'); });

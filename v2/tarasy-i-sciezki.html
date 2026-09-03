@@ -46,6 +46,15 @@
 </script>
 </head>
 <body>
+<!-- znak z logo: trzy romby -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="romby" viewBox="0 0 48 40">
+    <rect fill="var(--m3-b,#b5b5b7)" x="6.0" y="16.0" width="14.0" height="14.0" rx="2.2" transform="rotate(45 13 23)"/>
+    <rect fill="var(--m3-c,#d81f26)" x="28.0" y="16.0" width="14.0" height="14.0" rx="2.2" transform="rotate(45 35 23)"/>
+    <rect fill="var(--m3-a,#0a0a0a)" x="17.0" y="5.0" width="14.0" height="14.0" rx="2.2" transform="rotate(45 24 12)"/>
+  </symbol>
+</svg>
+
 <div id="intro" aria-hidden="true">
   <div class="im">Krusz<span>bruk</span></div>
   <div class="sub">Brukarstwo &middot; Korytnica</div>
@@ -53,7 +62,7 @@
 </div>
 <header class="nav">
   <div class="wrap nav-in">
-    <a href="index.html" class="brand"><i>K</i>Krusz<em>bruk</em></a>
+    <a href="index.html" class="brand"><svg class="m3" viewBox="0 0 48 40" aria-hidden="true"><use href="#romby"/></svg><span>Krusz<em>bruk</em></span></a>
     <ul class="menu" id="menu">
       <li><a href="index.html">Start</a></li>
       <li><a href="podjazdy-i-dojazdy.html" aria-current="page">Oferta</a>
@@ -63,7 +72,7 @@
       <li><a href="o-nas.html">O nas</a></li>
       <li><a href="kontakt.html">Kontakt</a></li>
     </ul>
-    <a href="tel:+48515643620" class="btn btn-y">515 643 620</a>
+    <a href="tel:+48515643620" class="nav-tel"><span><small>Wycena z pomiarem za 0 zł</small><b>515 643 620</b></span></a>
     <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">&#9776;</button>
   </div>
 </header>
@@ -76,44 +85,47 @@
   </div>
 </div>
 
-<section>
-  <div class="wrap split">
+<section class="foto">
+  <div class="foto-bg" data-par="0.14"><img src="img/g5.jpg" alt="Realizacja Kruszbruk" loading="lazy"></div>
+  <div class="wrap dwie srodek">
     <div class="rv">
-      <div class="eyebrow">Na czym to polega</div>
+      <div class="label"><b>01</b><span>Na czym to polega</span></div>
       <h2>Materiał dobieramy<br>zanim go kupisz</h2>
 <p class="lead" style="margin-top:16px">Taras od strony południowej i ścieżka pod drzewami to dwie różne roboty, choć obie „z kostki”. Jasna płyta tarasowa nie parzy w stopy latem, ale szybciej pokazuje plamy. Granit wytrzyma wszystko, tylko potrafi być śliski przy wodzie. Kostka betonowa jest najtańsza i najłatwiejsza w naprawie — jak jeden element pęknie, wymieniasz jeden element.</p>
 <p class="lead" style="margin-top:14px">Mówimy o tym przy pomiarze, zanim wydasz pieniądze na materiał, który nie sprawdzi się w Twoim miejscu.
       <ul class="check"><li>Doradzamy materiał pod konkretne miejsce — słońce, cień, drzewa, dzieci</li><li>Spadki od budynku, żeby woda nie stała przy ścianie</li><li>Podbudowa dobrana do ruchu pieszego, cieńsza i tańsza niż pod auto</li><li>Cięcie kostki przy krawędziach na wymiar, bez wypełniania szczelin zaprawą</li><li>Obrzeża oddzielające trawnik od nawierzchni</li><li>Możliwość ułożenia z materiału powierzonego</li></ul>
+      <div class="podpis">w tle: nasza realizacja</div>
       <div style="margin-top:30px;display:flex;gap:12px;flex-wrap:wrap">
         <a href="tel:+48515643620" class="btn btn-k">Zadzwoń — 515 643 620</a>
         <a href="kontakt.html" class="btn btn-o">Bezpłatna wycena</a>
       </div>
     </div>
-    <div class="rv"><img src="img/g5.jpg" alt="Tarasy i ścieżki — Kruszbruk" loading="lazy"></div>
+    <div class="rv kadr"><img src="img/g5.jpg" alt="Tarasy i ścieżki — Kruszbruk" loading="lazy"><div class="plakietka"><b>5 lat</b><span>gwarancji na robotę</span></div></div>
   </div>
 </section>
 
 <section class="smoke">
   <div class="wrap">
     <div class="rv" style="margin-bottom:36px">
-      <div class="eyebrow">Zakres</div>
+      <div class="label"><b>02</b><span>Zakres</span></div>
       <h2>Co wchodzi w robotę</h2>
     </div>
-    <div class="grid g4"><div class="card rv"><h3>Taras przy domu</h3><p>Płyta tarasowa, kostka lub granit ze spadkiem od budynku i z odwodnieniem, jeśli trzeba.</p></div><div class="card rv"><h3>Ścieżki i dojścia</h3><p>Dojście do furtki, ścieżka wokół domu, opaska przy fundamencie chroniąca ścianę przed wodą.</p></div><div class="card rv"><h3>Schody i podesty</h3><p>Stopnie z kostki, płyt lub palisady — bezpieczna wysokość stopnia i szorstka powierzchnia.</p></div><div class="card rv"><h3>Palisady i obrzeża</h3><p>Twarda granica między trawnikiem, skarpą i nawierzchnią — ziemia zostaje na swoim miejscu.</p></div></div>
+    <div class="uslugi cztery"><div class="u plain"><h3>Taras przy domu</h3><p>Płyta tarasowa, kostka lub granit ze spadkiem od budynku i z odwodnieniem, jeśli trzeba.</p></div><div class="u plain"><h3>Ścieżki i dojścia</h3><p>Dojście do furtki, ścieżka wokół domu, opaska przy fundamencie chroniąca ścianę przed wodą.</p></div><div class="u plain"><h3>Schody i podesty</h3><p>Stopnie z kostki, płyt lub palisady — bezpieczna wysokość stopnia i szorstka powierzchnia.</p></div><div class="u plain"><h3>Palisady i obrzeża</h3><p>Twarda granica między trawnikiem, skarpą i nawierzchnią — ziemia zostaje na swoim miejscu.</p></div></div>
   </div>
 </section>
 
-<section class="dark">
+<section class="foto">
+  <div class="foto-bg" data-par="0.1"><img src="img/g12.jpg" alt="Realizacja Kruszbruk" loading="lazy"></div>
   <div class="wrap">
     <div class="rv" style="margin-bottom:34px">
-      <div class="eyebrow">Jak pracujemy</div>
+      <div class="label"><b>03</b><span>Jak pracujemy</span></div>
       <h2>Wiesz, na czym stoisz —<br>na każdym etapie</h2>
     </div>
     <div class="steps rv">
-      <div class="step"><h3>Dzwonisz</h3><p>Telefon albo zdjęcia terenu. Po krótkiej rozmowie wiesz, czy to robota dla nas i kiedy możemy być na pomiarze.</p></div>
-      <div class="step"><h3>Pomiar i wycena</h3><p>Wycena jest z pomiaru, nie z telefonu. Po oględzinach wiesz, ile płacisz i co wchodzi w cenę.</p></div>
-      <div class="step"><h3>Robota</h3><p>Wchodzimy w umówionym terminie i robimy swoje do końca — bez znikania na inną budowę.</p></div>
-      <div class="step"><h3>Odbiór</h3><p>Przechodzimy razem po całości. Coś Ci nie gra — poprawiamy, zanim rozliczymy robotę.</p></div>
+      <div class="step"><span class="nr">01</span><h3>Dzwonisz</h3><p>Telefon albo zdjęcia terenu. Po krótkiej rozmowie wiesz, czy to robota dla nas i kiedy możemy być na pomiarze.</p></div>
+      <div class="step"><span class="nr">02</span><h3>Pomiar i wycena</h3><p>Wycena jest z pomiaru, nie z telefonu. Po oględzinach wiesz, ile płacisz i co wchodzi w cenę.</p></div>
+      <div class="step"><span class="nr">03</span><h3>Robota</h3><p>Wchodzimy w umówionym terminie i robimy swoje do końca — bez znikania na inną budowę.</p></div>
+      <div class="step"><span class="nr">04</span><h3>Odbiór</h3><p>Przechodzimy razem po całości. Coś Ci nie gra — poprawiamy, zanim rozliczymy robotę.</p></div>
     </div>
   </div>
 </section>
@@ -121,7 +133,7 @@
 <section>
   <div class="wrap">
     <div class="rv" style="margin-bottom:30px">
-      <div class="eyebrow">Realizacje</div>
+      <div class="label"><b>04</b><span>Realizacje</span></div>
       <h2>Z ostatnich robót</h2>
     </div>
     <div class="gal rv" id="gal"><div class="gi"><img src="img/g4.jpg" alt="Tarasy i ścieżki — realizacja Kruszbruk" loading="lazy"><span class="tag">Realizacja</span></div><div class="gi"><img src="img/g5.jpg" alt="Tarasy i ścieżki — realizacja Kruszbruk" loading="lazy"><span class="tag">Realizacja</span></div><div class="gi"><img src="img/g8.jpg" alt="Tarasy i ścieżki — realizacja Kruszbruk" loading="lazy"><span class="tag">Realizacja</span></div><div class="gi"><img src="img/g2.jpg" alt="Tarasy i ścieżki — realizacja Kruszbruk" loading="lazy"><span class="tag">Realizacja</span></div></div>
@@ -132,10 +144,10 @@
 <section class="smoke">
   <div class="wrap">
     <div class="rv" style="margin-bottom:26px">
-      <div class="eyebrow">Częste pytania</div>
+      <div class="label"><b>05</b><span>Częste pytania</span></div>
       <h2>Dobrze wiedzieć</h2>
     </div>
-    <div class="faq rv"><div class="q"><h3>Czym różni się kostka od płyty tarasowej?<i>+</i></h3><div class="a"><p>Płyta tarasowa jest większa, gładsza i zwykle jaśniejsza — ładniej wygląda przy domu, ale wymaga równiejszej podbudowy. Kostka jest tańsza i łatwiejsza w naprawie punktowej.</p></div></div><div class="q"><h3>Co zrobić, żeby taras nie zarastał mchem?<i>+</i></h3><div class="a"><p>Najważniejszy jest spadek i to, żeby woda nie stała. Reszta to sprawa mycia raz na jakiś czas — robimy to też jako osobną usługę.</p></div></div><div class="q"><h3>Da się ułożyć taras z mojego materiału?<i>+</i></h3><div class="a"><p>Tak. Najpierw go obejrzymy — nie każda płyta nadaje się w miejsce, w które chcesz ją położyć. Powiemy wprost, jeśli coś się nie sprawdzi.</p></div></div></div>
+    <div class="faq rv"><div class="q"><h3>Czym różni się kostka od płyty tarasowej?<i></i></h3><div class="a"><p>Płyta tarasowa jest większa, gładsza i zwykle jaśniejsza — ładniej wygląda przy domu, ale wymaga równiejszej podbudowy. Kostka jest tańsza i łatwiejsza w naprawie punktowej.</p></div></div><div class="q"><h3>Co zrobić, żeby taras nie zarastał mchem?<i></i></h3><div class="a"><p>Najważniejszy jest spadek i to, żeby woda nie stała. Reszta to sprawa mycia raz na jakiś czas — robimy to też jako osobną usługę.</p></div></div><div class="q"><h3>Da się ułożyć taras z mojego materiału?<i></i></h3><div class="a"><p>Tak. Najpierw go obejrzymy — nie każda płyta nadaje się w miejsce, w które chcesz ją położyć. Powiemy wprost, jeśli coś się nie sprawdzi.</p></div></div></div>
     <div class="rv" style="margin-top:40px">
       <h3 style="margin-bottom:14px">Pozostałe usługi</h3>
       <ul style="display:flex;flex-wrap:wrap;gap:10px"><li class="chip"><a href="podjazdy-i-dojazdy.html">Podjazdy i dojazdy</a></li><li class="chip"><a href="place-parkingi-drogi.html">Place, parkingi i drogi</a></li><li class="chip"><a href="odwodnienia-i-drenaze.html">Odwodnienia i drenaże</a></li><li class="chip"><a href="mycie-kostki-brukowej.html">Mycie kostki brukowej</a></li><li class="chip"><a href="wyburzenia-i-skuwanie.html">Wyburzenia i skuwanie</a></li></ul>
@@ -144,8 +156,9 @@
 </section>
 
 <section class="cta">
+  <div class="cta-bg"><img src="img/g8.jpg" alt="Realizacja Kruszbruk" loading="lazy"></div>
   <div class="wrap in">
-    <div class="eyebrow">Bezpłatna wycena</div>
+    <div class="label"><b>06</b><span>Bezpłatna wycena</span></div>
     <h2>Umówmy pomiar</h2>
     <p>Zadzwoń albo napisz — przyjeżdżamy, mierzymy i podajemy konkretną kwotę za całość. Za darmo i bez zobowiązań. Decyzję podejmujesz po poznaniu ceny, nie przed.</p>
     <div class="cta-row">
@@ -158,7 +171,7 @@
   <div class="wrap">
     <div class="fgrid">
       <div>
-        <a href="index.html" class="brand" style="margin-bottom:16px"><i>K</i>Krusz<em>bruk</em></a>
+        <a href="index.html" class="brand" style="margin-bottom:16px"><svg class="m3" viewBox="0 0 48 40" aria-hidden="true"><use href="#romby"/></svg><span>Krusz<em>bruk</em></span></a>
         <p style="margin-top:14px">Przedsiębiorstwo Usługowe Kruszbruk — Hubert Kruszewski. Brukarstwo, odwodnienia, mycie kostki i roboty rozbiórkowe. Korytnica, powiat węgrowski, Wyszków i Warszawa.</p>
       </div>
       <div><h4>Oferta</h4><ul><li><a href="podjazdy-i-dojazdy.html">Podjazdy i dojazdy</a></li><li><a href="tarasy-i-sciezki.html">Tarasy i ścieżki</a></li><li><a href="place-parkingi-drogi.html">Place, parkingi i drogi</a></li><li><a href="odwodnienia-i-drenaze.html">Odwodnienia i drenaże</a></li><li><a href="mycie-kostki-brukowej.html">Mycie kostki brukowej</a></li><li><a href="wyburzenia-i-skuwanie.html">Wyburzenia i skuwanie</a></li></ul></div>
